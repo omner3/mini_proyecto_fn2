@@ -27,7 +27,7 @@ export function Search({ showSearch, setShowSearch }) {
     return (
         <>
             {showSearch &&
-                <div className="bg-white fixed h-3/4 w-96">
+                <div className="bg-white fixed h-3/4 w-96 grid grid-cols-2">
                     <h3>Edit your search</h3>
                     <button onClick={() => setShowSearch(false)}>X</button>
                     <ul className=''>
