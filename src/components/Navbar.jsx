@@ -6,7 +6,7 @@ export function Navbar() {
     const [showSearch, setShowSearch] = useState(false)
 
     return (
-        <nav className="flex flex-col w-96 md:w-full lg:flex-row lg:w-96">
+        <nav className="flex flex-col w-96 md:w-full lg:flex-row lg:w-96" onClick={()=> setShowSearch(!showSearch)}>
             <Search
             showSearch={showSearch}
             setShowSearch={setShowSearch}
@@ -15,7 +15,7 @@ export function Navbar() {
             <div className="grid grid-cols-3 w-5/6 h-16 mt-8 rounded-xl place-items-center border-2 border-solid divide-x-2 self-center">
                 <span className="">Add location</span>
                 <span>Add guests</span>
-                <span onClick={()=> setShowSearch(!showSearch)}>
+                <span >
                     <img src="./src/assets/search_icon.svg" alt="search icon" />
                 </span>
             </div>
