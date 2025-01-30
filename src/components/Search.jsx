@@ -15,7 +15,7 @@ export function Search({ showSearch, setShowSearch }) {
         setGuests((prevState) => ({ ...prevState, [name]: value }))
 
     }
-
+//comentario en branch testbusqueda
     useEffect(() => {
         console.log(guests)
     }, [guests])
